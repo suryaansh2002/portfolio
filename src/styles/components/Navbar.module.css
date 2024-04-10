@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rem;
+}
+.containerDark {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(25deg, rgb(0, 21, 67) 0%, rgb(0, 0, 0) 60%);
+  color: white;
+}
+.containerLight {
+  background: rgb(237, 237, 237);
+  background: linear-gradient(
+    223deg,
+    rgba(237, 237, 237, 0.7178221630449055) 50%,
+    rgba(113, 139, 204, 1) 99%
+  );
+  color: black;
+}
+
+.darkIcon {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.lightIcon {
+  font-size: 2rem;
+  color: black;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.headerLogo {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  z-index: 10;
+  padding: 20px;
+}
+
+.headerLinksContainer {
+  margin: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 2rem;
+  margin-top: 2.5rem;
+  transform: translateY(-50%);
+  font-family: "Roboto";
+}
+.headerLink {
+  color: rgb(0, 131, 15);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-right: 1px solid rgb(92, 92, 92);
+  padding: 0.1rem 0.95rem;
+}
+
+.headerLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lastLink {
+    border: none;
+  }
+
+@media only screen and (max-width: 600px) {
+  .headerLinksContainer {
+    display: none;
+  }
+
+  .headerLogo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
